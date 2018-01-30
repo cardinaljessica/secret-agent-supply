@@ -113,6 +113,8 @@ nav ul {
   }
 }
 
+
+
 /* Products and Business Info */
 
 .products {
@@ -173,6 +175,27 @@ nav ul {
   }
 }
 
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -180,4 +203,10 @@ footer {
   background-color: black;
   color: white;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
 }
